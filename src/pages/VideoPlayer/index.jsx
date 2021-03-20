@@ -1,5 +1,9 @@
+import NavBar from "../../components/NavBar";
+
 export default function VideoPlayer() {
   return (
-    <h1>Video Player</h1>
+    <div className="application">
+      <NavBar />
+    </div>
   );
 }

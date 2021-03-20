@@ -1,5 +1,9 @@
+import NavBar from "../../components/NavBar";
+
 export default function MusicPlayer() {
   return (
-    <h1>MusicPlayer</h1>
+    <div className="application">
+        <NavBar />
+    </div>
   );
 }
