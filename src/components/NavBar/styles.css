@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 .navBarContainer {
@@ -50,24 +51,42 @@
 .sandwichButton {
   visibility: hidden;
   display: none;
+
+  align-items: center;
+  justify-content: center;
   position: absolute;
   right: 10px;
 
   background: none;
   border: 0;
   border-radius: 5px;
-  outline: var(--secondary-background);
-
-  align-items: center;
-  justify-content: center;
+  outline: var(--secondary-background);  
 }
 
 #sandwichImage {
   visibility: hidden;
   display: none;
+  max-width: 200px;
+}
+
+#sandwichImage:hover {
+  animation: girar 0.4s;
+}
+
+@keyframes girar {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(90deg);
+  }
 }
 
 @media (max-width: 768px) {
+  .navBarContainer{
+    gap: 10rem;
+  }
+
   .sandwichButton {
     display: flex;
     visibility: visible;
@@ -76,11 +95,18 @@
   
   #sandwichImage {
     visibility: visible;
-    display: flex;
+    display: block;
+    right: 1;
   }
   
   .divLink {
     visibility: hidden;
     display: none;
+  }
+  
+  .divButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -1,5 +1,6 @@
 import Routes from './routes';
-import './global.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import './global.css';
 
 function App() {
   return (
